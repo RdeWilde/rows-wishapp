@@ -7,7 +7,7 @@ import test.cars.entities.car.Car;
 
 
 
-public class Catalog extends ArrayList<Car> implements IEntity {
+public class Catalog extends ArrayList<Car> implements IEntity<CatalogKey> {
 	public boolean add(Car entity)
 	{
 		return super.add(entity);
