@@ -6,10 +6,8 @@ public class CatalogKey implements IKey<Catalog> {
 	private Catalog entity;
 
 	
-	public Catalog create() { // TODO: Pass Model<T>?
-		this.entity = new Catalog();
-		
-		return this.entity;
+	public void create(Catalog catalog) {
+		this.entity = catalog;
 	}
 
 
